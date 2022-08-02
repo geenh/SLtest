@@ -1,4 +1,6 @@
 ﻿#include<iostream>
+#include<string>
+#pragma warning(disable : 4996)
 using namespace std;
 
 struct Cat
@@ -23,5 +25,10 @@ int main()
 	cout << cat2.name << endl;
 	cout << cat2.weight << endl;
 
+	Cat lanMao;
+	strcpy(lanMao.name, "蓝猫");
+	lanMao.sex = 'M';
+	lanMao.age = 2;
+	lanMao.weight = 5;
 	return 0;
 }
