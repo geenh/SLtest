@@ -27,13 +27,24 @@ protected:
 	}
 
 };
+class Student :public Person
+{
+
+public:
+	void stu_display()
+	{
+		cout<<"名字：" <<"  " << name << "年龄：" << age << endl;
+	}
+
+};
 int main()
 {
-	Person p1;
+	
 	Person p2("Lucy",20);
-	//cout<<p1.name<<"  "<<p1.age << endl;
-	//p2.OutPut();
-	p1.display();
+
+	
 	p2.display();
+	Student s;
+	s.stu_display();
 	return 0;
 }
