@@ -5,8 +5,8 @@ class Book
 {
 public:
 	Book(const char* sname, const char* sauthor, double sprice);
-	char* GetName() { return name; }
-	char* GetAuthor() { return author; }
+	const char* GetName() { return name; }
+	const char* GetAuthor() { return author; }
 	double GetPrice() { return price; }
 	void Display()
 	{
@@ -25,7 +25,7 @@ Book::Book(const char* sname, const char* sauthor, double sprice)
 	strcpy(author, sauthor);
 	price = sprice;
 }
-
+    
 class OverLoad
 {
 public:
