@@ -1,5 +1,6 @@
 ﻿#include<iostream>
 using namespace std;
+#pragma warning(disable:4996)
 class CEmployee
 {
 public:
@@ -20,7 +21,7 @@ public:
 	char m_password[128];
 	bool Login()
 	{
-		if (strcmp(m_Name, "MR") == 0 && strcmp(m_password, "KJ"))
+		if (strcmp(m_Name, "MR") == 0 && strcmp(m_password, "KJ")==0)
 		{
 			cout<<"登录成功！" << endl;
 			return true;
